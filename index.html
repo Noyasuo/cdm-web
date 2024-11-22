@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDM Procurement</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include AOS CSS for animation -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to the custom styles -->
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/service.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/link.css">
+    <style>
+        /* Center each section vertically */
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        /* Add border-radius to the image in the home section */
+        #home .img-fluid {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar with fixed position -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/logo.png" alt="Brand Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#link">Link</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#catalogue">Catalogue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#help">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Off-canvas menu (visible only on mobile view) -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CDM Procurement</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#link">Link</a></li>
+                <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                <li class="nav-item"><a class="nav-link" href="#catalogue">Catalogue</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#help">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="row align-items-center flex-column flex-md-row text-center text-md-start">
+                <!-- Left Column: Image -->
+                <div class="col-md-6">
+                    <img src="assets/background.jpg" alt="Background Image" class="img-fluid" style="border-radius: 15px;" data-aos="fade-right" data-aos-duration="1000">
+                </div>
+
+                <!-- Right Column: Text Content -->
+                <div class="col-md-6 text-white mt-4 mt-md-0">
+                    <h3 data-aos="fade-down" data-aos-duration="1000">Welcome to Colegio de Montalban Procurement Management</h3>
+                    <p class="mt-3" style="font-size: large;" data-aos="fade-up" data-aos-duration="1000">
+                        Procurement Management System streamlines the entire purchasing process to 
+                        improve efficiency, transparency, and control over procurement activities. 
+                        From requisition to payment, our system offers a centralized platform that enables 
+                        seamless management of vendor relationships, procurement planning, and order tracking. 
+                        By integrating real-time data and comprehensive reporting tools, users can make informed 
+                        decisions, reduce costs, and ensure compliance with organizational standards. 
+                        Whether you're managing inventory, tracking orders, or overseeing supplier performance, 
+                        our system provides the tools you need to optimize procurement operations, enhance collaboration, 
+                        and drive sustainable value for your organization.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section id="link">
+        <div class="container text-center">
+            <h2 data-aos="fade-down" data-aos-duration="500">Links</h2>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-4"  data-aos="fade-right" data-aos-duration="500">
+                    <div class="card shadow-sm text-center">
+                        <img src="assets/desktop.png" class="card-img-top card-img-link" alt="Desktop">
+                        <div class="card-body card-body-link">
+                            <h5>User's Link</h5>
+                            <p>Click this to download mobile application</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-4" data-aos="fade-left" data-aos-duration="500">
+                    <a href="register.html" class="text-decoration-none">
+                        <div class="card shadow-sm text-center">
+                            <img src="assets/desktop.png" class="card-img-top card-img-link" alt="Desktop">
+                            <div class="card-body card-body-link">
+                                <h5>Supplier's Desktop Application</h5>
+                                <p>Click this to Register and Download the application</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service">
+        <div class="container text-center">
+            <h2 data-aos="fade-down" data-aos-duration="1000">Services</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-duration="900">
+                    <div class="card shadow-sm">
+                        <img src="assets/settings.png" class="card-img-top" alt="Settings">
+                        <h4>Increase certainty and quality</h4>
+                        <p>Procurement Management helps with planning and negotiating detailed contacts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4"  data-aos="flip-down" data-aos-duration="900">
+                    <div class="card shadow-sm">
+                        <img src="assets/hand.png" class="card-img-top" alt="Hand">
+                        <h4>Cost Control</h4>
+                        <p>Cost control is the top concern for all companies. Procurement management assists by negotiating prices and managing costs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4"  data-aos="fade-left" data-aos-duration="900">
+                    <div class="card shadow-sm">
+                        <img src="assets/caution.png" class="card-img-top" alt="Caution">
+                        <h4>Reduced Risk</h4>
+                        <p>With clarity about vendors, contract terms, and product quality, procurement risks are reduced.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalogue Section -->
+    <section id="catalogue" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container text-center">
+            <h2>Catalogue</h2>
+            
+            <!-- Category: Office Supply -->
+            <div class="row justify-content-center gx-3">
+                <h4 class="mt-4">Office Supply</h4>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm p-3 bg-light text-dark">
+                        <img src="https://www.bing.com/th?id=OIP.WNejsStD5wnZHWWyNcSrlwHaHa&w=150&h=150&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Stapler">
+                        <div class="card-body">
+                            <h6 class="card-title">Stapler</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm p-3 bg-light text-dark">
+                        <img src="https://th.bing.com/th/id/OIP.13lLNdT0qFo929ANxGbf_wHaG9?w=187&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Notebook">
+                        <div class="card-body">
+                            <h6 class="card-title">Notebook</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm p-3 bg-light text-dark">
+                        <img src="https://th.bing.com/th?q=HP+Brother+Printer+Ink&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-PH&cc=PH&setlang=en&adlt=moderate&t=1&mw=247" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Pens">
+                        <div class="card-body">
+                            <h6 class="card-title">Ink</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category: Cleaning Supply -->
+            <div class="row justify-content-center gx-3">
+                <h4 class="mt-4">Cleaning Supply</h4>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm p-3 bg-light text-dark">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Mop">
+                        <div class="card-body">
+                            <h6 class="card-title">Mop</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm p-3 bg-light text-dark">
+                        <img src="https://th.bing.com/th/id/OIP.G99iBCAImayNH4woW5u69QHaHa?w=195&h=195&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Broom">
+                        <div class="card-body">
+                            <h6 class="card-title">Broom</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm p-3 bg-light text-dark">
+                        <img src="https://th.bing.com/th/id/OIP.oaG3Sa8jFvibLv6mTRdm_QHaHa?w=198&h=197&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Cleaning Spray">
+                        <div class="card-body">
+                            <h6 class="card-title">Cleaning Spray</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category: Electronics & Parts -->
+            <div class="row justify-content-center gx-3">
+                <h4 class="mt-4">Electronics & Parts</h4>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm p-3 bg-light text-dark">
+                        <img src="https://th.bing.com/th/id/OIP.UlLXJLq1xlYzufcSvxvY0gHaC-?w=292&h=140&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Keyboard">
+                        <div class="card-body">
+                            <h6 class="card-title">Keyboard</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm p-3 bg-light text-dark">
+                        <img src="https://th.bing.com/th/id/OIP.Zz2JEcIdHgG1IysrfIEs8QHaHa?w=178&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Mouse">
+                        <div class="card-body">
+                            <h6 class="card-title">Mouse</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card shadow-sm p-3 bg-light text-dark">
+                        <img src="https://th.bing.com/th/id/OIP.0JWg1yDe-Mf2GZ4aLMqKcQHaHa?w=196&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="USB Cable">
+                        <div class="card-body">
+                            <h6 class="card-title">USB Cable</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <br>
+            <div class="row justify-content-center gx-2">
+                <!-- Image 1: Noya -->
+                <div class="col-6 col-md-4 mb-2" data-aos="fade-down-right" data-aos-duration="1000">
+                    <div class="card shadow-sm p-2 bg-lightgreen text-dark" style="margin: auto;">
+                        <img src="assets/noya.png" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Noya">
+                        <div class="card-body p-1">
+                            <h6 class="card-title mb-1" style="font-size: 1rem; font-weight: bold;">Noya</h6>
+                            <p class="text-muted mb-0" style="font-size: 0.8rem;">Developer Team</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 2: Semeniano -->
+                <div class="col-6 col-md-4 mb-2" data-aos="fade-down" data-aos-duration="1000">
+                    <div class="card shadow-sm p-2 bg-lightgreen text-dark" style="margin: auto;">
+                        <img src="assets/semeniano.png" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Semeniano">
+                        <div class="card-body p-1">
+                            <h6 class="card-title mb-1" style="font-size: 1rem; font-weight: bold;">Semeniano</h6>
+                            <p class="text-muted mb-0" style="font-size: 0.8rem;">Developer Team</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 3: Binamira -->
+                <div class="col-6 col-md-4 mb-2" data-aos="fade-down-left" data-aos-duration="1000">
+                    <div class="card shadow-sm p-2 bg-lightgreen text-dark" style="margin: auto;">
+                        <img src="assets/binamira.png" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Binamira">
+                        <div class="card-body p-1">
+                            <h6 class="card-title mb-1" style="font-size: 1rem; font-weight: bold;">Binamira</h6>
+                            <p class="text-muted mb-0" style="font-size: 0.8rem;">Developer Team</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Research Team Row -->
+            <div class="row justify-content-center gx-2">
+                <!-- Image 4: Balagon -->
+                <div class="col-6 col-md-4 mb-2" data-aos="fade-up-right" data-aos-duration="1000">
+                    <div class="card shadow-sm p-2 bg-lightgreen text-dark" style="margin: auto;">
+                        <img src="assets/balagon.png" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Balagon">
+                        <div class="card-body p-1">
+                            <h6 class="card-title mb-1" style="font-size: 1rem; font-weight: bold;">Balagon</h6>
+                            <p class="text-muted mb-0" style="font-size: 0.8rem;">Research Team</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 5: Banoy -->
+                <div class="col-6 col-md-4 mb-2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card shadow-sm p-2 bg-lightgreen text-dark" style="margin: auto;">
+                        <img src="assets/banoy.png" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Banoy">
+                        <div class="card-body p-1">
+                            <h6 class="card-title mb-1" style="font-size: 1rem; font-weight: bold;">Banoy</h6>
+                            <p class="text-muted mb-0" style="font-size: 0.8rem;">Research Team</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 6: Dizon -->
+                <div class="col-6 col-md-4 mb-2" data-aos="fade-up-left" data-aos-duration="1000">
+                    <div class="card shadow-sm p-2 bg-lightgreen text-dark" style="margin: auto;">
+                        <img src="assets/dizon.png" class="card-img-top rounded-circle mx-auto d-block" style="width: 70px; height: 70px; object-fit: cover;" alt="Dizon">
+                        <div class="card-body p-1">
+                            <h6 class="card-title mb-1" style="font-size: 1rem; font-weight: bold;">Dizon</h6>
+                            <p class="text-muted mb-0" style="font-size: 0.8rem;">Research Team</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .bg-lightgreen {
+            background-color: #e0f2e9; /* Slightly white, soft green background */
+        }
+    </style>
+    
+    
+    
+    
+    
+    <!-- Help Section -->
+    <!-- Help Section -->
+    <section id="help">
+        <div class="container text-center">
+            <h2 data-aos="fade-down" data-aos-duration="1000">Help</h2>
+            <br>
+            <div class="row justify-content-center gx-4">
+                <!-- Help Card 1 -->
+                <div class="col-md-5 mb-4" data-aos="flip-right" data-aos-duration="1000">
+                    <div class="card shadow-sm p-3 bg-light text-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">User's Guide</h5>
+                            <p class="card-text">Find answers to frequently asked questions here.</p>
+                            <a href="user.html" class="btn btn-yellow">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Help Card 2 -->
+                <div class="col-md-5 mb-4" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="card shadow-sm p-3 bg-light text-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Supplier's Guide</h5>
+                            <p class="card-text">Need further assistance? Contact our support team.</p>
+                            <a href="supplier.html" class="btn btn-yellow">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <footer class="bg-grey text-white text-center py-4 mt-5">
+        <p>&copy; 2024 CDM Procurement. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Include Bootstrap and AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

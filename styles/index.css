@@ -1,0 +1,73 @@
+/* Center the headers inside each section */
+section h2 {
+    color: white;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    text-align: center; /* Ensure the text itself is centered */
+    height: 100%; /* Ensure the section takes full height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Adjust padding and margins */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    padding: 0 15px; /* Ensure there's some padding around the content */
+}
+
+/* Body background gradient */
+body {
+    background: linear-gradient(135deg, #c3cfbb, #94a30b, #2e4d1e);
+
+
+    color: white; /* Default text color */
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* 70% opacity overlay */
+    z-index: 0;
+}
+
+.container, section {
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer styling, ensure it's above overlay */
+footer {
+    background-color: #111; /* Dark background for footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 2; /* Ensures it's above any overlay effect */
+    position: relative;
+}
+
+#home .container {
+    padding: 20px; /* Adjust as needed */
+    border-radius: 15px;
+}
+
+.btn-yellow {
+    background-color: green; /* Yellow color */
+    color: #fff; /* White text */
+    border: none;
+}
+
+.btn-yellow:hover {
+    background-color: #FFA000; /* Darker yellow on hover */
+}

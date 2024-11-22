@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2, h3 {
+    font-weight: 600;
+    color: #333;
+}
+
+/* User Guide Section */
+#user-guide {
+    padding: 40px 15px;
+}
+
+#user-guide h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    color: #007bff;
+    font-size: 1.3rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Styling */
+.btn-yellow {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-yellow:hover {
+    background-color: #e0b90f;
+}

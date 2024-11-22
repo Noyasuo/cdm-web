@@ -1,0 +1,144 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color:white;
+}
+
+h2, h3 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Header Styling */
+header {
+    background-color: green;
+    color: white;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-size: 1.2rem;
+    top: 0;
+}
+
+/* Full Policies Content */
+h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.09rem;
+    color: #333;
+    margin-top: 25px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn-yellow {
+    background-color: green;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-yellow:hover {
+    background-color: #e0b90f;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    .btn-yellow {
+        width: 100%;
+        text-align: center;
+    }
+}

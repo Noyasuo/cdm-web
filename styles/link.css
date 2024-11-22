@@ -1,0 +1,34 @@
+/* styles/link.css */
+
+.card {
+    border-radius: 10px; /* Optional: rounded corners */
+    border: none; /* Remove the border */
+    background-color: rgb(255, 255, 255); /* Light background for the card */
+    box-shadow: 2px 6px 8px rgba(177, 214, 73, 0.8); /* Optional: shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the card takes full height */
+}
+
+/* Ensure the image takes the full space of the card */
+.card-img-link {
+    max-width: 100%; /* Make the image fit within the card width */
+    max-height: 100%; /* Make the image fit within the card height */
+    object-fit: contain; /* Maintain aspect ratio */
+    display: block;
+}
+
+/* Remove padding and background from card-body */
+.card-body-link {
+    background-color: transparent; /* Make the background transparent */
+    padding: 0; /* Remove padding */
+    border: none; /* Ensure no border */
+}
+
+/* Optional: You can add custom styles for the card title if needed */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}

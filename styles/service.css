@@ -1,0 +1,36 @@
+/* styles/service.css */
+
+/* Ensure the cards have the same height */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: none; /* Remove the default border */
+    background-color: rgb(202, 182, 1);
+    padding: 20px; /* Add padding inside the card */
+}
+
+/* Set the image to take up most of the card space while maintaining aspect ratio */
+.card img {
+    width: 10%; /* Set image to fill the card */
+    height: auto;
+    object-fit: cover; /* Optional: ensures the image covers the space */
+    margin-bottom: 15px; /* Add space between the image and the text */
+}
+
+/* Add shadow to all cards */
+.card.shadow-sm {
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.5); /* Light shadow */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Make sure the cards have spacing from one another */
+.row .col-md-4 {
+    margin-bottom: 1.5rem; /* Add bottom margin to each card */
+}
+
+/* Add padding to the container to keep content away from the edge */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}

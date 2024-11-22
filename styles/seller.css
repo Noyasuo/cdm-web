@@ -1,0 +1,101 @@
+/* General Styles for Seller's Guide */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #48484e;
+    color: #333;
+}
+
+h1, h2 {
+    color: #003366;
+    font-weight: bold;
+}
+
+/* Section styles */
+.section {
+    padding: 60px 0;
+}
+
+#suppliers-guide {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#how-to-register,
+#supplier-policies,
+#supplier-support {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 40px 20px;
+}
+
+#how-to-register h2,
+#supplier-policies h2,
+#supplier-support h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+    transition: 0.3s;
+}
+
+/* Lists & Steps */
+ol, ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+ol li,
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #how-to-register, 
+    #supplier-policies, 
+    #supplier-support {
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
